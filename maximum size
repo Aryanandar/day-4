@@ -1,0 +1,34 @@
+nclude<string.h>
+#define ASCII_SIZE 128
+int main() {
+	char str[100];
+	int count[ASCII_SIZE]={0};
+	printf("enter a string:");
+	fgets(str,sizeof(str),stdin);
+	for(int i=0;i<strlen(str); i++) {
+		count[str[i]]++;
+	}
+	int max_count=0;
+	char max_char;
+	for(int i=0; i<strlen(str); i++) {
+		if(count[strinclude<stdio.h>
+int main()
+{
+	int n1,n2,i,gcd;
+	printf("enter two numbers:");
+	scanf("%d %d",&n1, &n2);
+	for(i=1; i<=n1 && i<=n2; ++i)
+	{
+		if(n1%i==0 && n2%i==0)
+		gcd=i;
+	}
+	printf("gcd of %d and %d is %d",n1,n2,gcd);
+	return 0;
+}[i]] >max_count) {
+			max_count=count[str[i]];
+			max_char=str[i];
+		}
+	}
+	printf("the maximum occuring character in the stringis '%c' with a frequency of %d\n",max_char,max_count);
+	return 0;
+	}
